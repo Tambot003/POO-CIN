@@ -2,12 +2,12 @@
 
 class Genre {
     private string $nom;
-    private $tabFilmsGenre;
+    private $tabFilmsGenres;
     
     public function __construct($nom)
     {
         $this->nom = $nom;
-        $this->tabFilmsGenre = [];
+        $this->tabFilmsGenres = [];
     }
     
     public function getNom()
@@ -24,26 +24,26 @@ class Genre {
     
     public function getTabFilmsGenre()
     {
-        return $this->tabFilmsGenre;
+        return $this->tabFilmsGenres;
     }
     
     public function setTabFilmsGenre($tabFilmsGenre): self
     {
-        $this->tabFilmsGenre = $tabFilmsGenre;
+        $this->tabFilmsGenres = $tabFilmsGenre;
         
         return $this;
     }
     
     public function addFilm($film){
-        $this->tabFilmsGenre [] = $film;
+        $this->tabFilmsGenres [] = $film;
     }
 
     public function listGenre()
     {
-        echo "<br> <br> *** Les films du genre " . $this . " sont: ***";
-        foreach ($this->tabFilmsGenre as $film)
+        echo "<br> <br> -- Les films du genre " . $this . " sont:";
+        foreach ($this->tabFilmsGenres as $film)
         {
-            echo $film->getTitre() ." - " ; 
+            echo $film->getTitre() ."  " ; 
         }
     }
     

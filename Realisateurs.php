@@ -18,7 +18,7 @@ class Realisateur extends Personne
         return $this->tableauFilms;
     }
     
-    public function setTableauFilms($tableauFilms): self
+    public function setTableauFilms($tableauFilms)
     {
         $this->tableauFilms = $tableauFilms;
         
@@ -35,7 +35,7 @@ class Realisateur extends Personne
     
     public function afficherFilmo(){
         
-        echo "*** Films réalisés par ". $this ." : ***<br>";
+        echo "-- Films réalisés par ". $this ." : <br>";
         foreach($this->tableauFilms as $film)
         {
             echo $film . "<br>";
