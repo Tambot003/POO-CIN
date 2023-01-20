@@ -23,7 +23,6 @@ class Film
     }
     
 
-
     public function getTitre()
     {
         return $this->titre;

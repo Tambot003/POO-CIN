@@ -15,7 +15,6 @@ $genre2 = new Genre("Action");
 $genre3 = new Genre("Thriller");
 $genre4 = new Genre("Comédie");
 
-
 $acteur1 = new Acteur("Ford", "Harrison", "Homme", "13-07-1942"); 
 $acteur2 = new Acteur("Bale", "Christian", "Homme", "30-01-1974");
 $acteur3 = new Acteur("Theron", "Charlize", "Femme", "07-08-1975");

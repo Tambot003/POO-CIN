@@ -1,8 +1,6 @@
 
 <?php
 
-
-
 class Acteur extends Personne
 {
     private $casting;
@@ -46,5 +44,4 @@ class Acteur extends Personne
         }
     }
     
-  
 }

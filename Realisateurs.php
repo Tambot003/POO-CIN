@@ -26,7 +26,6 @@ class Realisateur extends Personne
     }
     
     
-    
     public function addFilm($film){
         $this->tableauFilms[] = $film;
     }

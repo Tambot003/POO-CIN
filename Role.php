@@ -35,7 +35,6 @@ class Role
         return $this->nom;
     }
     
-   
   
     
     public function getCasting()

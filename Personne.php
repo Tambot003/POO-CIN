@@ -16,7 +16,6 @@ class Personne
     }
     
    
-    
     public function getNom(): string
     {
         return $this->nom;

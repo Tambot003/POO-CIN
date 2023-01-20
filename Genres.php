@@ -21,6 +21,8 @@ class Genre {
         
         return $this;
     }
+
+
     
     public function getTabFilmsGenre()
     {
