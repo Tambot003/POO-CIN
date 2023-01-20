@@ -22,7 +22,19 @@ class Casting
     {
         return $this->acteur;
     }
+
+    public function getRole()
+    {
+        return $this->role;
+    }
     
+    public function getFilm()
+    {
+        return $this->film;
+    }
+   
+
+
     public function setActeur($acteur)
     {
         $this->acteur = $acteur;
@@ -30,26 +42,16 @@ class Casting
         return $this;
     }
     
-    public function getRole()
-    {
-        return $this->role;
-    }
-    
-    public function setRole($role)
-    {
-        $this->role = $role;
-        
-        return $this;
-    }
-    
-    public function getFilm()
-    {
-        return $this->film;
-    }
-    
     public function setFilm($film): self
     {
         $this->film = $film;
+        
+        return $this;
+    }
+
+    public function setRole($role)
+    {
+        $this->role = $role;
         
         return $this;
     }
